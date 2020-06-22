@@ -6,6 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/num_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:hint="123456789"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/just_do_it"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Интервал от"
+        app:layout_constraintBottom_toTopOf="@+id/num_from"
+        app:layout_constraintEnd_toEndOf="@+id/num_from" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Интервал до"
+        app:layout_constraintBottom_toTopOf="@+id/num_for"
+        app:layout_constraintStart_toStartOf="@+id/num_for" />
+    <EditText
+        android:id="@+id/num_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="123456789"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/just_do_it"
+        app:layout_constraintEnd_toEndOf="parent" />
     <Button
         android:id="@+id/just_do_it"
         android:layout_width="wrap_content"
@@ -15,5 +49,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/just_do_it" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
